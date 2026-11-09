@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentguard-bench"
+version = "0.1.0"
+description = "A synthetic benchmark for permission-aware AI agent decisions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Krrish Sharma"}]
+dependencies = []
+
+[project.scripts]
+agentguard = "agentguard_bench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agentguard_bench*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
