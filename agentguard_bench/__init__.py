@@ -1,2 +1,7 @@
-"""AgentGuard Bench: synthetic tests for agent permission decisions."""
-__version__ = "0.1.0"
+"""AgentGuard benchmark and deterministic runtime permission gate."""
+
+from .guard import Access, ActionRequest, AgentGuard, ApprovalRequired, Authority, Decision, GuardResult
+
+__all__ = [
+    "Access", "ActionRequest", "AgentGuard", "ApprovalRequired", "Authority", "Decision", "GuardResult",
+]
